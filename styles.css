@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+body
+{
+    margin:0;
+    background-color: #0a192f;
+    color:white;
+    font-family: 'Open Sans', sans-serif;
+    display:flex;
+    flex-direction: column;
+}
+#home
+{
+    margin:0;
+    background-color: #0a192f;
+    color:white;
+    font-family: 'Open Sans', sans-serif;
+    display:flex;
+    flex-direction: column;   
+    overflow-x:hidden;
+}
+#navbar
+{
+    display: flex;
+    align-items: center;
+    /* background-color: rgb(75, 163, 75); */
+    padding: 2.5vh;
+    /* background-color: #1D232C; */
+    background-color: #0a192f;
+    z-index: 500;
+}
+
+#name {
+    font-family: 'Comic Neue', cursive;
+    font-size: calc(2em + 1vw);
+    font-weight: bolder;
+    padding-right: 30vh;
+}
+#red
+{
+    color:#64ffda;
+}
+#tags
+{
+    margin-top:10px;
+}
+#tags span
+{
+    padding-left: 4vh;
+}
+#tags a
+{
+    text-decoration: none;
+    color:white;
+    font-size: calc(.5em + 1vw);
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: black;
+}
+   
+  /* mouse over link */
+  #tags a:hover {
+    color:#64ffda;
+    text-decoration: underline;
+  }
+
+  /* selected link */
+  #tags a:active {
+    color: #64ffda;
+    text-decoration: underline;
+  }
+  .container {
+    background-color: rgba(2,12,27,0.7);
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text {
+    padding: 4vh;
+    font-family: 'Comic Neue', cursive;
+    height: 10vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text span {
+    text-transform: uppercase;
+    padding-right: 0.5vw;
+    font-size: calc(2.5em + 1vw); 
+    display: inline-block;
+    animation-delay: 1s; 
+    animation-name: example;
+    color: #64ffda;
+    animation-duration: calc(200ms * var(--i));
+}
+@keyframes example {
+    from {color: white;}
+    to {color: transparent;}
+  }
+  #myImage, #myInfo {
+    height: 100vh;
+}
+#me {
+    display: flex;
+    height: 75vh;
+    padding: 4vh;
+}
+#about h1 {
+    font-family: 'Comic Neue', cursive;
+    color: #64ffda;
+    letter-spacing: 1px;
+    font-size: calc(2em + 1vw);
+    /* text-decoration: underline; */
+    margin-left: 78px;
+}
+#about
+{
+margin-top:100px;
+}
+#myInfo div {
+    color: white;
+    margin-left: 5vw;
+    margin-right: 10vw;
+    font-size: calc(.5em + 1vw);
+}
+#myImage
+{
+    /* border:2px solid #64ffda; */
+    /* border-radius: 20px; */
+    height: 405px;
+  
+}
+#myImage img {
+    height: 400px;
+    width:487px;
+}
+div
+{
+    display:block;
+}
+#achievements
+{
+
+    
+    background-color: #0a192f;
+
+}
+#achievements h1 {
+    font-family: 'Comic Neue', cursive;
+    color: #64ffda;
+    letter-spacing: 1px;
+    font-size: calc(2em + 1vw);
+    /* text-decoration: underline; */
+    margin-left: 40vw;
+    margin-top: 100px;
+     padding-top: 2vh; 
+}
+.myAchievements {
+    color: white;
+    text-align: center;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    padding-right: 30vh;
+    padding-left: 30vh;
+    font-size: calc(.5em + 1vw);
+}
+.resume-button {
+    color: #64ffda;
+    background-color: transparent;
+    border: 1px solid #64ffda;
+    border-radius: 10px;;
+    padding: 0.75rem 1rem;
+    line-height: 1;
+    text-decoration: none;
+    cursor: pointer;
+    margin-left: 15px;
+
+}
+#contact {
+
+    background-color: rgba(2,12,27,0.7);
+}
+
+#contact h1 {
+    font-family: 'Comic Neue', cursive;
+    color: #64ffda;
+    letter-spacing: 1px;
+    font-size: 3em;
+    /* text-decoration: underline; */
+    margin-left: 43vw;
+    margin-top: 100px;
+    margin-bottom: 7vh;
+}
+
+form {
+    color: white;
+    /* background-color: rgba(2,12,27,0.7); */
+    background-color: #0a192f;
+    border:1px solid  #64ffda;
+    margin: 2.5vh 30vw 5vh 30vw;
+    padding: 8vh;
+    border-radius: 10px;
+}
+
+input,
+textarea {
+   
+    width: 100%;
+    border-radius: 1.25vh;
+    margin: 0.5vh;
+    border: none;
+}
+
+input{
+    height: 3vh;
+}
+
+.submit {
+    /* background-color: rgba(2,12,27,0.7); */
+    background-color: #0a192f;
+    color:  #64ffda;
+    font-size: calc(.2em + 1vw);
+    width: 100%;
+    border:1px solid #64ffda;
+    border-radius: 1.25vh;
+    font-weight: 900;
+}
+
+.submit:hover{
+    background-color: #64ffda;
+    color:rgba(2,12,27,0.7);
+}
+.submit:hover {
+    cursor: pointer;
+}
+/* .fields
+{
+    border:1px solid #64ffda;
+    background-color: rgba(2,12,27,0.7);
+} */
+#education {
+    background-color: rgba(2,12,27,0.7);
+}
+#education h1 {
+    font-family: 'Comic Neue', cursive;
+    color: #64ffda;
+    letter-spacing: 1px;
+    font-size: 3em;
+    /* text-decoration: underline; */
+    margin-left: 42.5vw;
+    margin-top: 100px;
+    margin-bottom: 7vh;
+}
+.myEducation{
+  
+    color: white;
+    text-align: center;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    padding-right: 30vh;
+    padding-left: 30vh;
+    font-size: calc(.5em + 1vw);
+}
+#education h2 
+{
+    font-family: 'Comic Neue', cursive;
+}
+#education h4
+{
+    font-family: 'Comic Neue', cursive;
+}
+.space
+{
+    line-height: 15px;
+}
+.zoom:hover {
+    transform: scale(1.2);
+  }
+#skills h1 {
+    font-family: 'Comic Neue', cursive;
+    color: #64ffda;
+    letter-spacing: 1px;
+    font-size: 3em;
+    /* text-decoration: underline; */
+    margin-left: 47vw;
+    margin-top: 100px;
+    margin-bottom: 7vh;
+}
+.row
+{
+    display: flex;
+    /* justify-content:center ; */
+    /* width:100vh; */
+    margin-bottom: 50px;
+    justify-content:space-around;
+
+}
+.skill-card
+{
+    text-align: center;
+}
+.github
+{
+    font-family: 'Comic Neue', cursive;
+    margin-top: 15px;   
+}
+#projects
+{
+    background-color: rgba(2,12,27,0.7);  
+}
+#projects h1
+{
+    font-family: 'Comic Neue', cursive;
+    color: #64ffda;
+    letter-spacing: 1px;
+    font-size: 3em;
+    /* text-decoration: underline; */
+    margin-left: 44vw;
+    margin-top: 100px;
+    margin-bottom: 7vh;  
+}
+.weatherapp
+{
+    display: flex;
+    width: 100%;
+    font-size: 2em;
+    margin-bottom: 100px;
+}
+.msexcel
+{
+    display: flex;
+    width: 100%;
+    font-size: 2em;
+    margin-bottom: 100px;
+}
+.foodapp
+{
+    display: flex;
+    width: 100%;
+    font-size: 2em;
+    margin-bottom: 100px;
+}
+#projects h2
+{
+    font-family: 'Comic Neue', cursive;
+
+    letter-spacing: 2px;
+    /* text-decoration: underline; */ 
+}
+.project-desc
+{
+    font-family: 'Comic Neue', cursive;
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+#projects a
+{
+    text-decoration: none;
+    color: white;
+  
+}
+#projects a:hover 
+{
+    color:#64ffda;
+}
+
+.tech
+{
+    display:flex;
+    justify-content: space-around;
+    margin-top: 20px;
+
+}
+.box
+{
+    border:1px solid #64ffda;
+    border-radius: 10px;
+    font-family: 'Comic Neue', cursive;
+    color:#64ffda;
+    font-size: 25px;
+    padding:8px;
+}
+.list-inline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+}
+
+footer span{
+    padding-left: 10vw;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+    font-size: calc(.3em + 1vw);
+}
+
+footer a:hover{
+    color: white;
+} 
+
+
+ .container {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    padding: 4vh;
+    font-family: 'Comic Neue', cursive;
+    height: 10vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer-tab
+{
+  height:65px;
+  display: flex;
+  align-items: center;
+}
