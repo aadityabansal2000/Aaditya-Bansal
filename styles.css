@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+*
+{
+    scroll-behavior: smooth;
+}
 body
 {
     margin:0;
@@ -102,13 +106,16 @@ body
     from {color: white;}
     to {color: transparent;}
   }
+
   #myImage, #myInfo {
     height: 100vh;
+   
 }
 #me {
     display: flex;
     height: 75vh;
     padding: 4vh;
+
 }
 #about h1 {
     font-family: 'Comic Neue', cursive;
@@ -133,7 +140,6 @@ margin-top:100px;
     /* border:2px solid #64ffda; */
     /* border-radius: 20px; */
     height: 405px;
-  
 }
 #myImage img {
     height: 400px;
@@ -323,6 +329,13 @@ input{
     margin-left: 44vw;
     margin-top: 100px;
     margin-bottom: 7vh;  
+}
+.imdb
+{
+    display: flex;
+    width: 100%;
+    font-size: 2em;
+    margin-bottom: 100px;
 }
 .weatherapp
 {
